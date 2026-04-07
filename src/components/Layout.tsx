@@ -2,6 +2,7 @@ import { Outlet, useLocation, useNavigate } from 'react-router-dom';
 import { AnimatePresence, motion } from 'motion/react';
 import AdaptiveNav from '@/components/AdaptiveNav';
 import CommandPalette from '@/components/CommandPalette';
+import FinalReveal from '@/components/FinalReveal';
 import { ObserverProvider } from '@/engine/useObserver';
 import { useEffect } from 'react';
 import { tracker } from '@/engine/BehaviorTracker';
@@ -34,6 +35,7 @@ function LayoutInner() {
     <div className="grain-overlay min-h-screen">
       <AdaptiveNav />
       <CommandPalette />
+      <FinalReveal />
       <AnimatePresence mode="wait">
         <motion.main
           key={location.pathname}

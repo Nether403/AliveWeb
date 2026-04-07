@@ -6,6 +6,7 @@ import ProjectDetail from '@/pages/ProjectDetail';
 import SessionTrace from '@/pages/SessionTrace';
 import GuidedView from '@/pages/GuidedView';
 import Compare from '@/pages/Compare';
+import Vault from '@/pages/Vault';
 
 const router = createBrowserRouter([
   {
@@ -31,6 +32,10 @@ const router = createBrowserRouter([
       {
         path: 'compare',
         element: <Compare />,
+      },
+      {
+        path: 'vault',
+        element: <Vault />,
       },
       {
         path: 'guided',

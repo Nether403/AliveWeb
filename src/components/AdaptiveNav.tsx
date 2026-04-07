@@ -62,6 +62,23 @@ export default function AdaptiveNav() {
                   </Link>
                 </motion.div>
               ))}
+              {adaptation.vaultUnlocked && (
+                <motion.div
+                  layout
+                  initial={{ opacity: 0, scale: 0.9, x: 20 }}
+                  animate={{ opacity: 1, scale: 1, x: 0 }}
+                  transition={{ duration: 0.5, ease: [0.16, 1, 0.3, 1] }}
+                >
+                  <Link
+                    to="/vault"
+                    className="ml-2 px-3 py-1.5 text-xs font-medium text-amber hover:text-amber-glow 
+                               rounded-full hover:bg-amber/10 transition-all duration-300
+                               tracking-wide uppercase border border-amber/30"
+                  >
+                    Vault
+                  </Link>
+                </motion.div>
+              )}
             </AnimatePresence>
 
             {/* Session Trace button */}

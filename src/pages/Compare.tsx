@@ -1,4 +1,4 @@
-import { useState, useMemo } from 'react';
+import { useState } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { useObserver } from '@/engine/useObserver';
 import { projects } from '@/data/projects';
